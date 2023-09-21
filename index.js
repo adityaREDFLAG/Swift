@@ -1,7 +1,7 @@
 const { AoiClient, LoadCommands } = require("aoi.js");
 const bot = new AoiClient({
-    token: "MTE0MzU3NzUwMjEwMzY1MDQxNQ.G1pStt.cC_rE-ASghNGCg1_Ap7ksYeukqBnnP7FtlYmaM",
-    prefix: ".",
+    token: "MTE0NzUxODA3MzQ4NjcyNTE2Mg.GspYZg.ClLQWirT1-oEEtSefAkYqU0J6hpqPqIQ-6-24g",
+    prefix: "+",
     intents: ["MessageContent", "Guilds", "GuildMessages"],
     events: ["onMessage"],
     database: {
@@ -19,8 +19,11 @@ loader.load(bot.cmd, "./Commands/") //you can change this to any directory you w
 
  
 bot.status({
-    text: "Roblox | Beta 01",
-    type: "PLAYING",
+    name: "Swift. BETA",
+     type: "PLAYING",
     status: "dnd",
     time: 12
+});
+
+bot.variables({
 });
